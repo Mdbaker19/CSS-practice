@@ -6,8 +6,33 @@ body {
 
 }
 
+#home{
+    margin-left: 5%;
+}
+
+#search{
+    margin-left: 5.5%;
+}
+
+#upload{
+    margin-left: 10.2%;
+}
+
 .video{
 
+}
+
+.videoButtons{
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    margin-top: -2%;
+}
+
+.videoSharing{
+    display: flex;
+    float: right;
+    margin-right: 55%;
 }
 
 .videoInfo{
@@ -20,4 +45,20 @@ body {
 
 .otherVideos{
 
+}
+
+.description{
+    margin-left: 5%;
+}
+
+.columnsOfVideos{
+    border: 2px solid black;
+}
+
+h1, h4{
+    margin-bottom: -1.3%;
+}
+
+button{
+    cursor: pointer;
 }
