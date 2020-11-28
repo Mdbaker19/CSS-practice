@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightblue;
+    color: aliceblue;
+    padding: 5vh 5vw;
+}
+.boardAll{
+    display: flex;
+    flex-wrap: wrap;
+    height: 800px;
+    width: 800px;
+    border: 10px solid black;
+}
+.square{
+    width: calc(100%/8);
+    height: calc(100%/8);
+    border: 2px solid black;
+}
+.dark{
+    background-color: saddlebrown;
+}
+.light{
+    background-color: lightgray;
+}
+.wk{
+    background-image: url('https://images.chesscomfiles.com/chess-themes/pieces/nature/150/wn.png');
+    background-position: center;
+    background-size: contain;
+}
+.wb{
+    background-image: url('https://images.chesscomfiles.com/chess-themes/pieces/nature/150/wb.png');
+    background-position: center;
+    background-size: contain;
+}
+.wr{
+    background-image: url('https://images.chesscomfiles.com/chess-themes/pieces/nature/150/wr.png');
+    background-position: center;
+    background-size: contain;
+}
+.bk{
+    background-image: url('https://images.chesscomfiles.com/chess-themes/pieces/nature/150/bn.png');
+    background-position: center;
+    background-size: contain;
+}
+.bb{
+    background-image: url('https://images.chesscomfiles.com/chess-themes/pieces/nature/150/bb.png');
+    background-position: center;
+    background-size: contain;
+}
+.br{
+    background-image: url('https://images.chesscomfiles.com/chess-themes/pieces/nature/150/br.png');
+    background-position: center;
+    background-size: contain;
+}
+.bp{
+    background-image: url('https://images.chesscomfiles.com/chess-themes/pieces/nature/150/bp.png');
+    background-position: center;
+    background-size: contain;
+}
+.wp{
+    background-image: url('https://images.chesscomfiles.com/chess-themes/pieces/nature/150/wp.png');
+    background-position: center;
+    background-size: contain;
+}
+.bKing{
+    background-image: url('https://images.chesscomfiles.com/chess-themes/pieces/nature/150/bk.png');;
+    background-position: center;
+    background-size: contain;
+}
+.bq{
+    background-image: url('https://images.chesscomfiles.com/chess-themes/pieces/nature/150/bq.png');
+    background-position: center;
+    background-size: contain;
+}
+.wKing{
+    background-image: url('https://images.chesscomfiles.com/chess-themes/pieces/nature/150/wk.png');
+    background-position: center;
+    background-size: contain;
+}
+.wq{
+    background-image: url('https://images.chesscomfiles.com/chess-themes/pieces/nature/150/wq.png');
+    background-position: center;
+    background-size: contain;
+}
+.piece:hover{
+    cursor: grab;
+}
