@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+}
+.form{
+    width: 50%;
+    position: relative;
+    height: 50px;
+/*    can be visualized in the size, size of the form area*/
+    overflow: hidden;
+}
+.form input{
+    width: 100%;
+    height: 100%;
+    color: #475fa3;
+    border: none;
+    padding-top: 20px;
+/*    padding on an input with this sizing moves the actual input text*/
+    outline: none;
+}
+.form label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+/*    allows click through of the label, size of label is size of input so it is sitting over top*/
+    border-bottom: 1px solid black;
+}
+.form label::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #475fa3;
+    left: 0;
+    bottom: -1px;
+/*    bottom -1px to account for border bottom of label above*/
+    transform: translateX(-100%);
+    transition: trasform 0.3s ease;
+}
+.contentName{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+}
+.form input:focus + .labelName .contentName, .form input:valid + .labelName .contentName{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #475fa3;
+}
+.form input:focus + .labelName::after, .form input:valid + .labelName::after{
+    transform: translateX(0%);
+}
